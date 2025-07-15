@@ -1,0 +1,37 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body
+		header.header
+			.container
+				.header-content
+					a(href="index.html") LOGO
+					.header-content-wrapper
+						.header-content-wrapper
+							.header-top-row
+								ul.header-menu
+									li
+										a(href="about.html") О компании
+									li
+										a(href="stores.html") Магазины 
+									li
+										a(href="#!") Покупателям
+									li
+										a(href="blog.html") Блог / рецепты
+									li
+										a(href="contacts.html") Контакты
+
+
+							.header-bottom-row

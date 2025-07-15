@@ -1,0 +1,61 @@
+.swiper .swiper-button-next, .swiper  .swiper-button-prev{
+	border: 1px solid var(--color-yarko-siniy-s-logo);
+	width: remy(55);
+	height:remy(55);
+	border-radius: 50%;
+	flex-shrink: 0;
+	background: var(--color-belyy);
+	display: flex;
+	justify-content: center;align-items: center;
+	&:after, &:before{display: none;}
+	@media (max-width: 767px) {
+	width: remy(40);
+	height: remy(40);
+	}
+}
+.swiper .swiper__nav{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	bottom: auto;
+	margin-top: 2rem;
+	column-gap:remy(10);
+	.swiper-button-next,.swiper-button-prev{
+		position: relative;
+		top:auto;
+		right: auto;
+		left: auto;
+		margin-top: 0;
+	}
+}
+.swiper .swiper-pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	column-gap: remy(8);
+	.swiper-pagination-bullet{
+		margin: 0;
+		height: remy(10);
+		border-radius: 5px;
+		flex:1;
+		max-width: remy(80);
+		background-color:  #6f6f6f;;
+		opacity: 1;
+		@media (max-width: 767px) {
+			max-width: remy(70);
+			height: remy(7);
+		}
+	}
+	.swiper-pagination-bullet-active{background: var(--goluboy);}
+}
+.fotorama-swiper-pagination.swiper-pagination .swiper-pagination-bullet{
+	@media (max-width: 767px) {
+		max-width: 10px;
+		width: 10px;
+		height: 10px;
+		background-color: var(--color-svetlyy-);;
+		&.swiper-pagination-bullet-active{background:  var(--temno-siniy);;}
+	}
+}

@@ -1,0 +1,64 @@
+@import "base/_var";
+@import "base/_base";
+@import "base/_grids.scss";
+
+@import "base/_vendore";
+@import "base/_typography";
+@import "base/_breadcrumbs";
+@import "base/_icons";
+@import "base/_buttons";
+@import "base/_form";
+@import "blocks/_social";
+@import "blocks/_swiper-slider";
+@import "blocks/_short-cart";
+@import "blocks/_product-card";
+
+@import "blocks/_our-stores";
+
+
+@import "sections/_header";
+@import "sections/_main-page";
+
+@import "sections/_main-page-promo";
+
+
+@import "sections/_benefits";
+@import "sections/_algoritm-steps";
+@import "sections/_contacts";
+@import "sections/_aboutus-section";
+@import "sections/_blog-section";
+@import "blocks/_counter";
+@import "sections/_poppulare";
+@import "blocks/_basket-card.scss";
+@import "blocks/_basket-calculate.scss";
+
+@import "blocks/_catalogy-menu.scss";
+
+
+@import "blocks/_discount-card";
+@import "blocks/_acordion.scss";
+@import "sections/_assortiment.scss";
+@import "sections/_catalogy-page.scss";
+@import "sections/_basket-page.scss";
+@import "sections/_delivery-page.scss";
+@import "sections/_faq.scss";
+@import "sections/_order-page.scss";
+@import "blocks/_fotorama.scss";
+@import "sections/_single-product.scss";
+@import "sections/_about-page.scss";
+@import "sections/_about-benefits";
+@import "sections/_partners";
+@import "sections/_docs";
+@import "sections/_reviews";
+@import "sections/_feedback";
+@import "sections/_blog-page";
+@import "sections/_blog-article";
+
+@import "sections/_recepts";
+@import "sections/_404";
+@import "sections/_footer";
+
+
+
+// ui
+@import "ui/_ui-navigation";

@@ -1,0 +1,45 @@
+.promo-swiper{
+	width: remy(1136);
+	
+	.promo-slide{
+		width: 100%;
+		aspect-ratio: 1136/672;
+		background-size: cover;
+		position: relative;
+		border-radius: remy(15);
+	}
+	.promo-slide__title{
+		width: 50%;
+		position: absolute;
+		bottom: remy(40);
+		left: remy(50);
+		z-index: 5;
+	}
+	.promo-swiper-pagination{justify-content: flex-end; padding-right: remy(50); bottom: remy(40)}
+
+	@media (max-width: 767px) {
+		width: remy(344);
+	}
+	@media (max-width: 389px) {
+		width: remy(334);
+	}
+}
+.promo{
+	@media (max-width: 767px) {
+		
+		.promo-slide__title{
+			bottom: remy(72);
+			left: 1rem;
+		}
+		.promo-slide{
+			aspect-ratio: 344/520;
+		}
+		.promo-swiper-pagination{
+			padding-left: 1rem;
+			padding-right: 1rem;
+			justify-content: center;
+			bottom:remy(24);
+		}
+	}
+	
+}

@@ -1,0 +1,132 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Кнопки
+
+				.container-dashboard__content
+					div(style="background-color: blue; padding-top:15px; padding-bottom: 15px;")
+						button.cart-btn.cart-btn--transform
+							svg.svg-cart
+								use(href='../img/sprite.svg#svg-cart')
+							span.fw-700 Корзина
+					pre.
+						button.cart-btn.cart-btn--transform
+							svg.svg-cart
+								use(href='../img/sprite.svg#svg-cart')
+							span.fw-700 Корзина
+					hr
+					div(style="background-color: blue; padding-top:15px; padding-bottom: 15px;")
+						button.cart-btn
+							svg.svg-cart
+								use(href='../img/sprite.svg#svg-cart')
+							
+					pre.
+						button.cart-btn
+							svg.svg-cart
+								use(href='../img/sprite.svg#svg-cart')
+					br
+					button.btn-dark Оформить заказ
+					pre.
+						button.btn-dark Оформить заказ
+					button.btn Оформить заказ
+					pre.
+						button.btn Заказать
+					hr
+					a(href="#!").btn-outline Заказать
+					button.btn-outline Оформить заказ
+					pre.
+						a(href="#!").btn-outline Заказать
+					hr
+					input.btn-light(type="submit" value="Заказать")
+					pre.
+						input.btn-light(type="submit" value="Заказать")
+					hr
+					button.btn-light.btn-44 Оформить заказ
+					pre.
+						button.btn-light.btn-44 Заказать
+					
+					hr
+					div(style="background-color: blue; padding-top:15px; padding-bottom: 15px;")
+						button.btn-catalogy
+							span.icon-menu
+								span
+							span Каталог
+					pre.
+						button.btn-catalogy
+							span.icon-menu
+								span
+							span Каталог
+					
+					
+					hr
+					div(style="background-color: blue; padding-top:15px; padding-bottom: 15px;")
+						button.btn-white Оформить
+							
+					pre.
+						button.btn-white Оформить
+					
+					
+					
+					button.cart-clean Очистить
+					pre.
+						button.cart-clean Очистить
+					hr
+					button.button-blue Информация
+					pre.
+						button.button-blue Информация
+					hr
+					span.round-arrow
+						svg.svg-arrRight
+							use(href='../img/sprite.svg#svg-arrRight')
+					pre.
+						span.round-arrow
+							svg.svg-arrRight
+								use(href='../img/sprite.svg#svg-arrRight')
+
+					hr
+					a.round-arrow-link(href="#!")
+						span Смотреть еще отзывы
+						span.round-arrow
+							svg.svg-arrRight
+								use(href='../img/sprite.svg#svg-arrRight')
+					pre.
+						a.round-arrow-link(href="#!")
+							span Смотреть еще отзывы
+							span.round-arrow
+								svg.svg-arrRight
+									use(href='../img/sprite.svg#svg-arrRight')
+					hr
+					a.round-arrow-link(href="#!")
+						span.round-arrow.round-arrow--dark
+							svg.svg-arrRight
+								use(href='../img/sprite.svg#svg-arrRight')
+					pre.
+						a.round-arrow-link(href="#!")
+							span.round-arrow.round-arrow--dark
+								svg.svg-arrRight
+									use(href='../img/sprite.svg#svg-arrRight')
+
+					br
+					a.round-arrow-link.border-link(href="#!")
+						span ОТР “Сезон добычи камбалы”
+						span.round-arrow.round-arrow--dark
+							svg.svg-arrRight
+								use(href='../img/sprite.svg#svg-arrRight')

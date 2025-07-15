@@ -1,0 +1,15 @@
+
+main.main-page{
+	padding-top: remy(46);
+	padding-bottom: remy(80);
+	.grid-two-columns{align-items: flex-start;}
+	
+ @media (max-width: 767px) {
+	padding-top: 26px;
+	padding-bottom: 60px;
+ 	.grid-two-columns .grid-aside{
+		display: none;
+	}
+
+ }
+}

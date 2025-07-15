@@ -1,0 +1,194 @@
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher-Regular'), local('Philosopher-Regular'), url('../fonts/Philosopher-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher-Bold'), local('Philosopher-Bold'), url('../fonts/Philosopher-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'), url('../fonts/latomedium.woff2') format('woff2'), url('../fonts/latomedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold'), local('Lato-Semibold'), url('../fonts/latosemibold.woff2') format('woff2'), url('../fonts/latosemibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/latobold.woff2') format('woff2'), url('../fonts/latobold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Heavy'), local('Lato-Heavy'), url('../fonts/latoheavy.woff2') format('woff2'), url('../fonts/latoheavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	
+}
+:root {
+	--color-temnyy-siniy: #011e64;
+	--color-smuglyy: #132439;
+	--color-yarko-siniy-s-logo: #002a85;
+	--color-smuglyy-yarkiy: #132439;
+	--color-svetlyy-: #ccd3e9;
+	--color-chernyy: #0e1526;
+	--color-belyy: #fff;
+	--color-seryy: #bfbfbf;
+	--color-tekst-seryy: #6f6f6f;
+	--temno-siniy: #132439;
+	--goluboy: #e6edf6;
+	--svetlo-siniy: #4d6583;
+
+	--baseFs: #{$baseFs};
+	--font-family: "Lato", sans-serif;
+    --second-family: "Philosopher", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--color-chernyy);
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+	font-size: var(--baseFs);
+	@media (max-width: 1699px) {
+		font-size: size(16);
+	}
+	@media (max-width: 767px) {
+	font-size: var(--baseFs);
+	}
+}
+.lock{
+	overflow: hidden; 
+}
+.page-content{
+	display: flex;
+	flex-direction: column;
+	&>*{width: 100%;}
+	header.header, footer.footer{flex-shrink:0}
+	main{flex-grow: 1;}
+}
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+*:focus{
+	outline: none;
+}
+a[href^="tel:"],
+a[href^="mailto:"] {
+	white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.img-cover,.img-contain{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.img-contain{
+	object-fit: contain;
+
+}
+input,
+button, textarea{border: none;}
+button:focus,
+input:focus,textarea:focus{outline: none;}
+button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input[type="submit"] {
+	padding-block: 0;
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+address{font-style: normal;}
+
+input::placeholder, textarea::placeholder, textarea::placeholder{
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.container{
+	width: remy(1560);
+
+	margin:0 auto;
+	padding-inline: remy(20);
+    @media (max-width: 1699px) {
+		width: size(1560);
+	}
+	@media (max-width: 767px) {
+		width: calc(100vw - 40px);
+		max-width: 540px;
+		padding-inline:0;
+	}
+}
+main.inner-page{
+	padding-top: remy(20);
+	padding-bottom: remy(80);
+	@media (max-width: 767px) {
+		padding-top: remy(16);
+		padding-bottom: remy(60);
+	}
+}

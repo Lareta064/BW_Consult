@@ -1,0 +1,64 @@
+/*vendore*/
+.w-100{width: 100%!important;}
+.flex, .flex-center-y,  .flex-center-x,  .flex-center, .flex-col{
+	display: flex;
+	gap:remy(8);
+}
+.flex-center, .flex-center-x{justify-content: center;}
+.flex-center, .flex-center-y{align-items: center;}
+.flex-col{flex-direction: column; &>*{width:100%;}}
+.stretch-flex{
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+*.scroll-x{
+	overflow: hidden;
+	overflow-x: auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{
+		display: none;
+	}
+	@media (max-width: 767px) {
+		width: calc(50% + 50vw);
+		&>*:last-child{margin-right: 16px;}
+	}
+	
+}
+
+.txt-center{text-align: center;}
+.border-round-card{
+	border: 1px solid var(--goluboy);
+	border-radius: remy(15);
+	padding: remy(20);
+}
+
+*.hide-sm{
+	display: flex;
+	@media (max-width: 767px) {
+	display: none!important;
+	}
+}
+*.visible-sm{
+	display: none!important;;
+	@media (max-width: 767px) {
+	display: flex!important;
+	}
+}
+.mb-0{
+	margin-bottom:0 !important;
+}
+.mb-24{
+	margin-bottom: remy(24);
+}
+.mb-32{
+	margin-bottom: remy(32);
+}
+.pos-abs{
+	position: absolute;
+}
+.pos-rel{
+	position: relative;
+}
+.br-15{border-radius: remy(15)}

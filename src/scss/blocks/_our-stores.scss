@@ -1,0 +1,21 @@
+
+ .our-stores{
+	.swiper-slide{
+		width: remy(330)!important;
+		@media (max-width: 767px) {
+			width: remy(308)!important;
+		}
+	}
+	@media (max-width: 767px) {
+	width: calc(50% + 50vw);
+	}
+}
+.store-item{
+	font-size: remy(10);
+	border-radius: 1.5em;
+	overflow: hidden;
+	img{
+		width: 100%;
+		aspect-ratio:330/195;
+	}
+}
