@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
    let bodyEl = document.body;
     	/*open mobile menu */
     const menuButton = document.querySelector('#menu-toggle');
-    const mobileMenu = document.querySelector('#header-mobile-menu');
+    const mobileMenu = document.querySelector('#header-menu');
     
     menuButton.addEventListener('click', ()=> {
       
