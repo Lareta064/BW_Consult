@@ -45,3 +45,9 @@
 .mb-0{
 	margin-bottom:0 !important;
 }
+.mb-60{
+	margin-bottom: 60px;
+	@media (max-width: 767px) {
+	margin-bottom: 30px;
+	}
+}

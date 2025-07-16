@@ -1,0 +1,14 @@
+.service-stages{
+	.custom-order-list{
+		padding-left: 197px;
+		@media (max-width: 1439px) {
+			padding-left: 120px;
+		}
+		@media (max-width: 1279px) {
+			padding-left: 60px;
+		}
+		@media (max-width: 1023px) {
+		padding-left: 0;
+		}
+	}
+}

@@ -12,6 +12,31 @@
 		font-size: 34px;
 	}
 }
+.h2{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 100%;
+	letter-spacing: 0.01em;
+	color: var(--text);
+	@media (max-width: 1199px) {
+		font-size: 36px;
+	}
+	@media (max-width: 767px) {
+	  font-size: 28px;
+	}
+}
+.h-22{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+	color: #29282d;
+	@media (max-width: 767px) {
+	  font-size: 18px;
+	}
+}
 .inner-promo{
 	.h1, .font_15{color: #fff;}
 } 
@@ -70,21 +95,72 @@
 		 li{font-size: 15px;max-width: 100%; column-gap:10px;} 
 		}
 }
-.h2{
-	font-family: var(--font-family);
-	font-weight: 600;
-	font-size: 42px;
-	line-height: 100%;
-	letter-spacing: 0.01em;
-	color: var(--text);
-	@media (max-width: 1199px) {
-		font-size: 36px;
-		margin-bottom: 30px;
+.custom-order-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none; 
+	counter-reset: num;
+	li {
+		position: relative;	
+		padding-left: 78px;
+		display: flex;
+		column-gap:20px;
+		.h-22{
+			flex:1;
+			max-width: 297px;
+		}
+		.font_15{
+			width: 471px;
+			@media (max-width: 1023px) {
+			  width: 100%;
+			  max-width: 471px;
+			}
+		}
+		@media (max-width: 1023px) {
+		  flex-direction: column;
+		  row-gap:10px;
+		  
+		}
+		@media (max-width: 767px) {
+		  padding-left: 57px;
+		}
 	}
-	@media (max-width: 767px) {
-	  font-size: 28px;
+	li:before {
+		content: counter(num) '.'; 
+		counter-increment: num;
+		display: inline-block;	
+		position: absolute;
+		top: -11px;
+		left: 0;
+		width: 40px;
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 65px;
+		line-height: 120%;
+		letter-spacing: 0.01em;
+		color: #dbbe83;
+		flex-shrink:0;
+		@media (max-width: 767px) {
+			font-size: 50px;
+			top: -5px;
+		}
+	}
+	li +li{
+		margin-top: 55px;
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
 	}
 }
+
+
 .section-subtext{
 	max-width: 739px;
+}
+.bg-grey{
+	background-color:  #fafafa;
+	padding-block: 60px;
+	@media (max-width: 767px) {
+		padding-block: 30px;
+	}
 }

@@ -21,16 +21,7 @@
 		display: none;
 		}
 	}
-	.h-22{
-		font-family: var(--font-family);
-		font-weight: 600;
-		font-size: 22px;
-		line-height: 120%;
-		letter-spacing: 0.01em;
-		color: #29282d;
-		
-		max-width: 90%;
-	}
+	
 	@media (max-width: 767px) {
 		padding: 20px 15px;
 		border-bottom:none;

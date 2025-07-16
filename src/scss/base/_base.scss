@@ -156,6 +156,9 @@ input::placeholder, textarea::placeholder, textarea::placeholder{
 	display: flex;
 	flex-direction: column;
 	row-gap:40px;
+	@media (max-width: 767px) {
+	row-gap:25px;
+	}
 
 }
 .social-group{
