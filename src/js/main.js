@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         bodyEl.classList.add('lock');
       }
     });
+
+   
    //STICKY HEADER
    const header = document.querySelector("#header");
    
@@ -232,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
         acorGroups.forEach((gr)=>{
           acorItemHeader = gr.querySelector('.acordion-header');
           acorItemHeader.addEventListener('click', ()=>{
+            console.log('555');
             if(gr.classList.contains('active')){
               gr.classList.remove('active');
             }else{

@@ -2,8 +2,8 @@
 .menu-toggle {
   display: none;
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: #fff;
   z-index: 11;
   cursor: pointer;
@@ -22,7 +22,7 @@
   height: 2px;
   width: 100%;
   border-radius: 3px;
-  background-color: var(--text);
+  background-color: var(--accent);
   transition: 0.3s;
 }
 
@@ -32,7 +32,7 @@
   position: absolute;
   left: 0;
   height: 2px;
-  background-color: var(--text);
+  background-color: var(--accent);
   border-radius: 5px;
   right: 0;
   transition: 0.3s;

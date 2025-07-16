@@ -28,11 +28,7 @@
 }
 
 .txt-center{text-align: center;}
-.border-round-card{
-	border: 1px solid var(--goluboy);
-	border-radius: remy(15);
-	padding: remy(20);
-}
+
 
 *.hide-sm{
 	display: flex;
@@ -49,16 +45,3 @@
 .mb-0{
 	margin-bottom:0 !important;
 }
-.mb-24{
-	margin-bottom: remy(24);
-}
-.mb-32{
-	margin-bottom: remy(32);
-}
-.pos-abs{
-	position: absolute;
-}
-.pos-rel{
-	position: relative;
-}
-.br-15{border-radius: remy(15)}

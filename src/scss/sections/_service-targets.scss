@@ -1,0 +1,63 @@
+
+.card-border-accent{
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	overflow: hidden;
+	border-radius: 6px;
+	padding: 30px 20px;
+	border-bottom: 6px solid #dbbe83;
+	.acordion-header{
+		pointer-events: none;
+		margin-bottom: 30px;
+		@media (max-width: 767px) {
+		  pointer-events:auto;
+		  cursor:pointer;
+		  margin-bottom: 0;
+		}
+	}
+	.acordion-body{
+		display: block;
+		@media (max-width: 767px) {
+		display: none;
+		}
+	}
+	.h-22{
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 120%;
+		letter-spacing: 0.01em;
+		color: #29282d;
+		
+		max-width: 90%;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 15px;
+		border-bottom:none;
+		border-right: 6px solid #dbbe83;
+		
+	}
+}
+.card-border-accent.active{
+	@media (max-width: 767px) {
+	    .acordion-body{padding-top: 15px;}
+	}
+}
+.service-targets-cards{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap:20px;
+	row-gap:20px;
+	.card-border-accent{
+		grid-column: span 4;
+		@media (max-width: 1279px) {
+			grid-column: span 6;
+		}
+		@media (max-width: 1023px) {
+			grid-column: span 12;
+		}
+	}
+	@media (max-width: 767px) {
+		row-gap:10px;
+	}
+}

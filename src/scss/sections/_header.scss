@@ -3,6 +3,7 @@
 	.logo{
 		height: 30px;
 		margin-right: 90px;
+		display: inline-flex;
 		*>*{
 			height: 100%;
 			width: auto;
@@ -16,11 +17,12 @@
 			margin-right: 30px;
 		}
 		@media (max-width: 767px) {
-		margin-right: auto;
+			margin-right: auto;
+			height: 24px;
 		}
 	}
 	@media (max-width: 767px) {
-	   padding-block:10px;
+	   padding-block: 15px;
 	}
 }
 .header-inner .btn-accent{
@@ -38,7 +40,7 @@
 	}
 	@media (max-width: 767px) {
 	  position: fixed;
-	  top:52px;
+	  top:54px;
 	  left: 0;
 	  right: 0;
 	  height: 100vh;
@@ -80,7 +82,9 @@
 	transition: .3s;
 	padding-block: 5px;
 	white-space: nowrap;
+	
 	&:hover{
 		color: var(--accent);
 	}
 }
+.header-menu__item.active .header-menu__link{color: var(--accent);}
