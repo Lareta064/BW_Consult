@@ -1,0 +1,41 @@
+.shadow-card{
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+	border-radius: 6px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 40px;
+	min-height: 214px;
+	max-width: 374px;
+	@media (max-width: 1199px) {
+	  max-width: 100%;
+	}
+	
+}
+.req-docs__content{
+	column-gap: 40px;
+	display: flex;
+	@media (max-width: 1199px) {
+	  flex-direction: column;
+	  row-gap:30px;
+	}
+}
+.req-docs__title{flex:1;}
+.req-docs__cards{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	gap:20px;
+	flex-shrink: 0;
+	.shadow-card{
+		grid-column: span 6;
+	}
+	@media (max-width: 767px) {
+		row-gap:10px;
+	.shadow-card{
+		grid-column: span 12;
+		min-height: 123px;
+		}
+	}
+}
