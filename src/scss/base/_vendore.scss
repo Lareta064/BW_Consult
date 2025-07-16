@@ -6,7 +6,7 @@
 }
 .flex-center, .flex-center-x{justify-content: center;}
 .flex-center, .flex-center-y{align-items: center;}
-.flex-col{flex-direction: column; &>*{width:100%;}}
+.flex-col{flex-direction: column;}
 .stretch-flex{
 	display: flex;
 	width: 100%;

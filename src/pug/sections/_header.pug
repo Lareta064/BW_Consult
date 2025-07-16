@@ -1,10 +1,32 @@
-header.header-mobile
+header.header-inner
 	.container
-		a.logo(href="index.html")
-			img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='44'  alt='logo')
+		.header-inner__content.flex-center-y
+			a.logo(href="index.html")
+				img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='30'  alt='logo')
+			//menu-wrapper
+			.header-inner-menu.flex
+				//menu
+				ul.header-menu__list
+					li.header-menu__item
+						a(href="#!").header-menu__link Услуги
+					li.header-menu__item
+						a(href="#!").header-menu__link О нас
+					li.header-menu__item
+						a(href="#!").header-menu__link Контакты
+				//social
+				.social-group
+					a(href="#!").social-group__link
+						svg.svg-wa
+							use(href='./img/sprite.svg#svg-wa')
+					a(href="#!").social-group__link
+						svg.svg-tg
+							use(href='./img/sprite.svg#svg-tg')
+				//button
+				button(type="button").btn-accent ЗАПИСАТЬСЯ
 
-		//menu-toggle
-		button.menu-toggle#menu-toggle
-			span
+			
+			//menu-toggle
+			button.menu-toggle#menu-toggle
+				span
 	
 
