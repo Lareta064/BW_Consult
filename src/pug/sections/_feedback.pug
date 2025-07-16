@@ -1,0 +1,20 @@
+//FORM
+section.feedback
+	.container
+		.feedback-content
+			h2.h-42 Задать вопрос прямо сейчас
+			form.feedback-form
+				.form-item
+					input.form-input(type="text" name="name" placeholder="Ваше имя")
+				
+				.form-item
+					input.form-input(type="text" name="phone" placeholder="Номер телефона")
+				
+				.form-item
+					textarea.form-textarea( name="message" placeholder="Комментарий")
+				.form-button
+					button.btn-dark.w-100(type='submit') ОТПРАВИТЬ ЗАЯВКУ
+					p.txt-12 Свидетельство о госрегистрации права на недвижимость, договор купли-продажи
+
+		.feedback-bg
+			img.img-cover(src='./img/form-bg.webp', srcset='./img/form-bg@2x.webp 2x' width='720' height='640' loading='lazy' alt='img')
