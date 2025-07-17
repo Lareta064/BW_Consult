@@ -191,15 +191,7 @@ input::placeholder, textarea::placeholder, textarea::placeholder{
 	&-item:last-child:after{display: none;}
 	
 }
-.py-130{
-	padding-block:130px;
-	@media (max-width: 1199px) {
-	   padding-block:90px;
-	}
-	@media (max-width: 767px) {
-	   padding-block:60px;
-	}
-}
+
 /*swiper*/
 .swiper-button-prev,
 .swiper-button-next{

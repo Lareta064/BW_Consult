@@ -57,3 +57,21 @@
 	margin-bottom: 30px;
 	}
 }
+.py-130{
+	padding-block:130px;
+	@media (max-width: 1199px) {
+	   padding-block:90px;
+	}
+	@media (max-width: 767px) {
+	   padding-block:60px;
+	}
+}
+.pb-130{
+	padding-bottom: 130px;
+	@media (max-width: 1199px) {
+	   padding-bottom: 90px;
+	}
+	@media (max-width: 767px) {
+	   padding-bottom: 60px;
+	}
+}
