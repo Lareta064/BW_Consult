@@ -1,0 +1,41 @@
+//CONTACTS
+section.contacts.py-130
+	.container
+		.contacts-content.flex
+			.contacts-list
+				address
+					p.h-22 г. Москва, Электронный проезд, д.16, офис 323
+				
+				.contacts-group.work-mode
+					.h-22 Режим работы:
+					.font_22
+						p с 10:00 до 19:00
+						p без выходных
+				
+				.contacts-group.hide-mobile
+					.h-22 Связаться с нами
+					a(href="tel:").font_22
+						svg.svg-phone
+							use(href='./img/sprite.svg#svg-phone')
+						span +7(499)455-78-62
+					
+					a(href="mailto:info@eok-ocenka.ru").font_22
+						svg.svg-email
+							use(href='./img/sprite.svg#svg-email')
+						span info@eok-ocenka.ru
+
+			//MAP
+			.contacts-map
+				script(type='text/javascript' charset='utf-8' async src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ed116c98e3c267776094e25473cd78528730b014ef0db684a27b5d20a6da107&width=100%&height=100%&lang=ru_RU&scroll=false')
+			
+			.contacts-group.visible-mobile
+					.h-22 Связаться с нами
+					a(href="tel:").font_22
+						svg.svg-phone
+							use(href='./img/sprite.svg#svg-phone')
+						span +7(499)455-78-62
+					
+					a(href="mailto:info@eok-ocenka.ru").font_22
+						svg.svg-email
+							use(href='./img/sprite.svg#svg-email')
+						span info@eok-ocenka.ru
