@@ -18,7 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-   
+   //CASES SLIDER
+   const casesSlider = new Swiper('.cases-swiper',{
+    navigation: {
+        nextEl: ".cases-button-next",
+        prevEl: ".cases-button-prev",
+      },
+   });
    //STICKY HEADER
    const header = document.querySelector("#header");
    
