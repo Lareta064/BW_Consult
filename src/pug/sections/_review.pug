@@ -1,0 +1,39 @@
+mixin revCard
+	//single slide
+	.swiper-slide
+		.review-card
+			.flex
+				img.img-cover(src='./img/rev.webp', srcset='./img/rev@2x.webp 2x' width='' height='' loading='lazy' alt='img')
+				
+				.review-card__group
+					.h-26 Александра
+					.rating-block
+						span
+						span
+						span
+						span
+						span
+			p.font_18 Очень грамотные специалисты, доступно все объяснили и быстро помогли решить, как мне показалось сложный вопрос. Спасибо!
+//REVIEW
+section.review
+	.container
+		h2.h2 Отзывы
+		//SWIPER
+		.section-swiper
+			.review-swiper.swiper
+				.swiper-wrapper
+					+revCard
+					+revCard
+					+revCard
+					+revCard
+					+revCard
+				
+				//PAGINATION
+				.review-pagination.swiper-pagination
+			//SWIPER NAV ARROWS
+			.review-button-next.swiper-button-next
+				svg.svg-arr-right
+					use(href='./img/sprite.svg#svg-arr-right')
+			.review-button-prev.swiper-button-prev
+				svg.svg-arr-left
+					use(href='./img/sprite.svg#svg-arr-left')

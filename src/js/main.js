@@ -20,11 +20,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
    //CASES SLIDER
    const casesSlider = new Swiper('.cases-swiper',{
+     spaceBetween: 10,
     navigation: {
         nextEl: ".cases-button-next",
         prevEl: ".cases-button-prev",
       },
+     breakpoints: {
+        768: {
+          spaceBetween: 20,
+        },
+        
+      }
    });
+  
+   //review-swiper
+   const reviewSlider = new Swiper('.review-swiper',{
+    slidesPerView:'auto',
+    pagination: {
+        el: ".review-pagination",
+        clickable: true,
+      },
+    navigation: {
+        nextEl: ".review-button-next",
+        prevEl: ".review-button-prev",
+      },
+       breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768:{
+          slidesPerView: 2,
+          // spaceBetween:20,
+        }
+      }
+   });
+   
    //STICKY HEADER
    const header = document.querySelector("#header");
    

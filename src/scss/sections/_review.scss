@@ -1,0 +1,76 @@
+.review-card{
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap:14px;
+	.flex{
+		column-gap:20px;
+	    align-items: flex-start;
+	}
+	.flex img{
+		border-radius: 50%;
+		width: 75px;
+		height: 75px;
+		flex-shrink: 0;
+	}
+	&__group{
+		display: flex;
+		flex-direction: column;
+		gap:14px;
+	}
+	.font_18{
+		padding-left: 91px;
+		@media (max-width: 1199px) {
+		  padding-left: 0;
+		}
+	}
+}
+.rating-block{
+	display: flex;
+	align-items: center;
+	column-gap:1px;
+	span{
+		width: 34px;
+		height: 32px;
+		flex-shrink: 0;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.6813 1.17759C16.0551 0.0272644 17.6825 0.0272651 18.0563 1.17759L21.0736 10.4641C21.2408 10.9785 21.7202 11.3268 22.2611 11.3268H32.0255C33.235 11.3268 33.7379 12.8746 32.7594 13.5855L24.8598 19.3249C24.4222 19.6429 24.2391 20.2064 24.4063 20.7209L27.4236 30.0074C27.7974 31.1577 26.4808 32.1143 25.5023 31.4033L17.6027 25.664C17.1651 25.346 16.5725 25.346 16.1349 25.664L8.23532 31.4033C7.25679 32.1143 5.9402 31.1577 6.31396 30.0074L9.33133 20.7209C9.49848 20.2064 9.31537 19.6429 8.87776 19.3249L0.978177 13.5855C-0.000347853 12.8746 0.502547 11.3268 1.71207 11.3268H11.4765C12.0174 11.3268 12.4968 10.9785 12.664 10.4641L15.6813 1.17759Z' fill='%23DBBE83'/%3e%3c/svg%3e");
+		background-size: contain;
+		@media (max-width: 767px) {
+		  width: 18px;
+		  height:17px;
+		  
+		}
+	}
+}
+.review-swiper{
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	.swiper-slide{
+		padding: 20px 10px;
+	}
+	.review-pagination.swiper-pagination{display: none;}
+	@media (max-width: 767px) {
+		padding: 0;
+		.swiper-slide{
+			padding: 20px 5px;
+			width: 300px!important;
+		}
+		.review-pagination.swiper-pagination{
+			display: flex;
+			justify-content: center;
+			bottom:0;
+			.swiper-pagination-bullet{background: rgba(41, 40, 45, 0.15);opacity: 1;}
+			.swiper-pagination-bullet-active{background: #DBBE83;}
+		}
+		
+	}
+}
+.review{
+	@media (max-width: 767px) {
+		.swiper-button-prev,.swiper-button-next{display: none;}
+	}
+	
+}

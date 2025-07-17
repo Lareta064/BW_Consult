@@ -222,14 +222,18 @@ input::placeholder, textarea::placeholder, textarea::placeholder{
 	}
 }
 .swiper-button-prev{
+	left: 0;
+	transform: translateX(-30%);
 	@media (max-width: 1023px) {
-		left: 50%;
-		transform: translateX(-60px);
+		left: 20px;
+		transform: translateX(0);
 	}
 }
 .swiper-button-next{
+	right: 0;
+	transform: translateX(30%);
 	@media (max-width: 1023px) {
-		right: 50%;
-		transform: translateX(60px);
+		right: 20px;
+		transform: translateX(0);
 	}
 }
