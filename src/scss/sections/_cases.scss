@@ -125,6 +125,13 @@
 	}
 }
 /*cases-swiper*/
+.section-swiper{
+	position: relative;
+	
+	@media (max-width: 1023px) {
+	  padding-bottom: 60px;
+	}
+}
 .cases-swiper{
 	padding: 20px;
 }

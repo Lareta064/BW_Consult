@@ -41,7 +41,7 @@ section.cases.py-130
 	.container
 		h2.h2.mb-60 Кейсы
 		//SWIPER
-		.cases-swiper-wrapper
+		.section-swiper
 			.cases-swiper.swiper
 				.swiper-wrapper
 					//SINGLE SLIDE
@@ -51,10 +51,10 @@ section.cases.py-130
 					.swiper-slide
 						+case
 				
-				//SWIPER NAV ARROWS
-				.cases-button-next
-					svg.svg-arr-right
-						use(href='./img/sprite.svg#svg-arr-right')
-				.cases-button-prev
-					svg.svg-arr-left
-						use(href='./img/sprite.svg#svg-arr-left')
+			//SWIPER NAV ARROWS
+			.cases-button-next.swiper-button-next
+				svg.svg-arr-right
+					use(href='./img/sprite.svg#svg-arr-right')
+			.cases-button-prev.swiper-button-prev
+				svg.svg-arr-left
+					use(href='./img/sprite.svg#svg-arr-left')

@@ -200,3 +200,36 @@ input::placeholder, textarea::placeholder, textarea::placeholder{
 	   padding-block:60px;
 	}
 }
+/*swiper*/
+.swiper-button-prev,
+.swiper-button-next{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 4px;
+	background-color: #dbbe83;
+	&:after{display: none;}
+	@media (max-width: 1199px) {
+		width: 50px;
+		height: 50px;
+	}
+	@media (max-width: 1023px) {
+	  top: auto;
+	  bottom: 0;
+	  
+	}
+}
+.swiper-button-prev{
+	@media (max-width: 1023px) {
+		left: 50%;
+		transform: translateX(-60px);
+	}
+}
+.swiper-button-next{
+	@media (max-width: 1023px) {
+		right: 50%;
+		transform: translateX(60px);
+	}
+}
