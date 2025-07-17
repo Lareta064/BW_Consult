@@ -1,0 +1,48 @@
+.case-card{
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	padding: 36px 50px;
+	border-radius: 6px;
+	max-width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.case-card-list{
+	align-items: flex-end;
+	column-gap:30px;
+	.font_20{
+		flex-grow:1;
+		
+	}
+	.h-22{
+		white-space: nowrap;
+		flex-shrink: 0;
+		text-align: left;
+		min-width: 140px;
+	}
+	li+li{margin-top: 11px;}
+}
+.border-accent{
+	border: 1px solid #dbbe83;
+	border-radius: 6px;
+	padding: 36px 25px;
+}
+.case-card__row{
+	display: grid;
+	grid-template-columns: 60% 38%;
+	column-gap:19px;
+}
+.case-card__group.flex{
+	flex-direction: column;
+	row-gap:20px;
+}
+.case-card-desc{
+	&>*+*{margin-top: 14px;}
+}
+.case-card__img{
+	flex-direction: column;
+	row-gap:28px;
+	.h-20{
+		span{display: block;}
+	}
+}

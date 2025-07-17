@@ -19,13 +19,16 @@
 	line-height: 100%;
 	letter-spacing: 0.01em;
 	color: var(--text);
+	margin-bottom: 60px;
 	@media (max-width: 1199px) {
 		font-size: 36px;
 	}
 	@media (max-width: 767px) {
 	  font-size: 28px;
+	  margin-bottom: 30px;
 	}
 }
+
 .h-42{
 	font-family: var(--font-family);
 	font-weight: 600;
@@ -40,7 +43,7 @@
 	 font-size: 28px;
 	}
 }
-.h-22{
+.h-20,.h-22{
 	font-family: var(--font-family);
 	font-weight: 600;
 	font-size: 22px;
@@ -51,7 +54,11 @@
 	  font-size: 18px;
 	}
 }
-.txt-12{
+.h-20{
+	font-size: 20px;
+	line-height: 120%;
+}
+.font_12, .font_20, .font_15{
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 12px;
@@ -59,18 +66,27 @@
 	letter-spacing: 0.01em;
 	color: #29282d;
 }
-.inner-promo{
-	.h1, .font_15{color: #fff;}
-} 
 .font_15{
-	font-family: var(--font-family);
-	font-weight: 400;
+	
 	font-size: 15px;
 	line-height: 140%;
-	letter-spacing: 0.01em;
+	
 	@media (max-width: 767px) {
 	  font-size: 12px;
 	}
+}
+ .font_18{
+	font-size: 18px;
+	@media (max-width: 767px) {
+	  font-size: 12px;
+	}
+ }
+.font_20{
+	font-size: 20px;
+	line-height: 120%;
+}
+.inner-promo{
+	.h1, .font_15{color: #fff;}
 }
 .txt-accent {color: #dbbe83;}
 .decore-list{
