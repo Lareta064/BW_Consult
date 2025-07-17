@@ -1,0 +1,29 @@
+//CALC FORM
+section.calculation
+	.container
+		.calculation-title
+			h2.h2 Получите предварительную консультацию оценщика #[strong бесплатно]
+			p.font_22 Оставьте заявку, перезвоним в течение пары минут
+		form.calculation-form
+			.flex
+				.form-item
+					input.form-input(type="text" name="name" placeholder="Ваше имя")
+				.form-item
+					input.form-input(type="text" name="phone" placeholder="Номер телефона")
+				.form-btn
+					button.btn-dark(type="submit" name="name") ОТПРАВИТЬ ЗАЯВКУ
+			p.agree.font_12 Отправляя данные, вы даете согласие на обработку персональных данных и #[a(href="#!") политику конфиденциальности]
+		
+		//social
+		.social-links
+			a(href="#!").social-label
+				.flex-center
+					svg.svg-tg
+						use(href='./img/sprite.svg#svg-tg')
+				span Telegram
+
+			a(href="#!").social-label
+				.flex-center
+					svg.svg-wa
+						use(href='./img/sprite.svg#svg-wa')
+				span WhatsApp
