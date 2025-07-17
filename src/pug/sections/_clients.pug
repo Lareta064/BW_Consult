@@ -1,0 +1,23 @@
+mixin clientCard(img, w, h)
+	//single slide
+	.swiper-slide
+		img(src='./img/client'+img+'.webp', srcset='./img/client'+img+'@2x.webp 2x' width=''+w height=''+h loading='lazy' alt='img')
+//CLIENTS
+section.our-clients.py-130
+	.container
+		h2.h2 Нам доверяют
+	//SLIDER
+	.clients-swiper.swiper
+		.swiper-wrapper
+			+clientCard(1, 154, 97)
+			+clientCard(2, 156, 43)
+			+clientCard(3, 155, 73)
+			+clientCard(4, 180, 55)
+			+clientCard(5, 95, 93)
+			+clientCard(6, 154, 105)
+			+clientCard(1, 154, 97)
+			+clientCard(2, 156, 43)
+			+clientCard(3, 155, 73)
+			+clientCard(4, 180, 55)
+			+clientCard(5, 95, 93)
+			+clientCard(6, 154, 105)

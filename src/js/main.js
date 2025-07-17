@@ -54,7 +54,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
    });
-   
+   //CLIENTS SWIPER
+   const clientsSwiper = new Swiper('.clients-swiper', {
+      slidesPerView: 'auto',
+      loop: true,
+      speed: 5000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: -1,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+       breakpoints: {
+        1200:{
+          slidesPerView: 5,
+        }
+      }
+    });
+
    //STICKY HEADER
    const header = document.querySelector("#header");
    

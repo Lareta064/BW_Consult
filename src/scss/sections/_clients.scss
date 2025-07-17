@@ -1,0 +1,32 @@
+.clients-swiper{
+	.swiper-wrapper{
+		display: flex;
+	}
+	.swiper-slide{
+		height: unset;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		@media (max-width: 1199px) {
+		  width: 250px!important;
+		  padding-left: 40px;
+		  padding-right: 45px;
+		}
+		@media (max-width: 767px) {
+		  width: 150px!important;
+		  padding-left: 25px;
+		  padding-right: 25px;
+		}
+	}
+}
+.clients .h2{
+	margin-bottom: 85px;
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
+}
