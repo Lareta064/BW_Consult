@@ -3,7 +3,9 @@
 		display: flex;
 	}
 	.swiper-slide{
-		height: unset;
+		height: 105px;
+		padding-left: 65px;
+		padding-right: 65px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -14,7 +16,7 @@
 		}
 		@media (max-width: 1199px) {
 		  width: 250px!important;
-		  padding-left: 40px;
+		  padding-left: 45px;
 		  padding-right: 45px;
 		}
 		@media (max-width: 767px) {

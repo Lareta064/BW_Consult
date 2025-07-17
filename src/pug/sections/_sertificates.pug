@@ -1,0 +1,95 @@
+mixin slides(img, img2, img3, fb)
+	.swiper-slide
+		a(href='./img/sertif'+img+'.webp' data-fancybox=""+fb)
+			img(src='./img/sertif'+img+'.webp', srcset='./img/sertif'+img+'@2x.webp 2x' width='348' height='476' loading='lazy' alt='img')
+	.swiper-slide
+		a(href='./img/sertif'+img2+'.webp' data-fancybox=""+fb)
+			img(src='./img/sertif'+img2+'.webp', srcset='./img/sertif'+img2+'@2x.webp 2x' width='348' height='476' loading='lazy' alt='img')
+	.swiper-slide
+		a(href='./img/sertif'+img3+'.webp' data-fancybox=""+fb)
+			img(src='./img/sertif'+img3+'.webp', srcset='./img/sertif'+img3+'@2x.webp 2x' width='348' height='476' loading='lazy' alt='img')
+	
+//Сертификаты
+section.sertificates
+	.container
+		h2.h2 Сертификаты
+		.sertificates-content.tabs
+			.tabs__nav
+				button(type="button" data-tbat="1").tabs__nav-btn.active Сертификаты
+				button(type="button" data-tbat="2").tabs__nav-btn Аттестаты 
+				button(type="button" data-tbat="3").tabs__nav-btn Аттестаты
+				button(type="button" data-tbat="4").tabs__nav-btn Страхование
+				button(type="button" data-tbat="5").tabs__nav-btn Участие в СРО
+				
+			
+			.tabs-body
+				//вкладка 1
+				.tabs-content.active(data-tcontent='1')
+					.section-swiper
+						.mySwiper.swiper
+							.swiper-wrapper
+								+slides(1, 2, 3, 'alb1')
+						
+						//SWIPER NAV ARROWS
+						.mySwiper-next.swiper-button-next
+							svg.svg-arr-right
+								use(href='./img/sprite.svg#svg-arr-right')
+						.mySwiper-prev.swiper-button-prev
+							svg.svg-arr-left
+								use(href='./img/sprite.svg#svg-arr-left')
+				//вкладка 2
+				.tabs-content(data-tcontent='2')
+					.section-swiper
+						.mySwiper.swiper
+							.swiper-wrapper
+								+slides(3, 2, 1, 'alb2')
+						
+						//SWIPER NAV ARROWS
+						.mySwiper-next.swiper-button-next
+							svg.svg-arr-right
+								use(href='./img/sprite.svg#svg-arr-right')
+						.mySwiper-prev.swiper-button-prev
+							svg.svg-arr-left
+								use(href='./img/sprite.svg#svg-arr-left')
+				//вкладка 3
+				.tabs-content(data-tcontent='3')
+					.section-swiper
+						.mySwiper.swiper
+							.swiper-wrapper
+								+slides(2, 3, 1, 'alb3')
+						
+						//SWIPER NAV ARROWS
+						.mySwiper-next.swiper-button-next
+							svg.svg-arr-right
+								use(href='./img/sprite.svg#svg-arr-right')
+						.mySwiper-prev.swiper-button-prev
+							svg.svg-arr-left
+								use(href='./img/sprite.svg#svg-arr-left')
+				//вкладка 4
+				.tabs-content(data-tcontent='4')
+					.section-swiper
+						.mySwiper.swiper
+							.swiper-wrapper
+								+slides(1, 2, 3, 'alb4')
+						
+						//SWIPER NAV ARROWS
+						.mySwiper-next.swiper-button-next
+							svg.svg-arr-right
+								use(href='./img/sprite.svg#svg-arr-right')
+						.mySwiper-prev.swiper-button-prev
+							svg.svg-arr-left
+								use(href='./img/sprite.svg#svg-arr-left')
+				//вкладка 5
+				.tabs-content(data-tcontent='5')
+					.section-swiper
+						.mySwiper.swiper
+							.swiper-wrapper
+								+slides(3, 2, 1, 'alb5')
+						
+						//SWIPER NAV ARROWS
+						.mySwiper-next.swiper-button-next
+							svg.svg-arr-right
+								use(href='./img/sprite.svg#svg-arr-right')
+						.mySwiper-prev.swiper-button-prev
+							svg.svg-arr-left
+								use(href='./img/sprite.svg#svg-arr-left')

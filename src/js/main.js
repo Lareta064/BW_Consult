@@ -68,9 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
       freeModeMomentum: false,
        breakpoints: {
         1200:{
-          slidesPerView: 5,
+          slidesPerView:5,
+        },
+      1920:{
+          slidesPerView:6,
         }
-      }
+      },
     });
 
    //STICKY HEADER
@@ -251,32 +254,63 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const tabsContainers = document.querySelectorAll('.tabs-container');
-  
-    tabsContainers.forEach(container => {
-      const tabs = container.querySelectorAll('.tab');
-      const contents = container.querySelectorAll('.tab-content');
-  
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          tabs.forEach(innerTab => innerTab.classList.remove('active'));
-          tab.classList.add('active');
-  
-          contents.forEach(content => content.classList.remove('active'));
-          const activeContent = container.querySelector(tab.getAttribute('data-tab-target'));
-  
-          // Проверяем, существует ли элемент activeContent перед добавлением класса
-          if (activeContent) {
-            activeContent.classList.add('active');
-          } else {
-            console.error('Ошибка: Нет элемента соответствующего data-tab-target:', tab.getAttribute('data-tab-target'));
+ // TABS
+document.addEventListener("DOMContentLoaded", function () {
+  let activeSwiper = null; // Храним активный Swiper
+
+  function initSwiper(container) {
+      return new Swiper(container, {
+          slidesPerView: 'auto',
+          spaceBetween:10,
+          speed: 800,
+          navigation: {
+              nextEl: ".mySwiper-next",
+              prevEl: ".mySwiper-prev",
+          },
+           breakpoints: {
+            768:{
+              slidesPerView:3,
+              spaceBetween:10,
+            },
+            1200:{
+              slidesPerView:3,
+              spaceBetween:18,
+            },
           }
-        });
       });
-    });
+  }
 
+  function activateTab(tabButton) {
+      const tabValue = tabButton.getAttribute("data-tbat");
 
+      document.querySelectorAll(".tabs__nav-btn").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".tabs-content").forEach(tab => tab.classList.remove("active"));
+
+      
+      tabButton.classList.add("active");
+      const activeTab = document.querySelector(`.tabs-content[data-tcontent="${tabValue}"]`);
+      if (activeTab) {
+          activeTab.classList.add("active");
+
+         
+          setTimeout(() => {
+              const swiperContainer = activeTab.querySelector(".mySwiper");
+              if (swiperContainer) {
+                  if (activeSwiper) activeSwiper.destroy(true, true); // Удаляем старый Swiper
+                  activeSwiper = initSwiper(swiperContainer); // Запускаем новый Swiper
+              }
+          }, 50);
+      }
+  }
+
+ 
+  document.querySelectorAll(".tabs__nav-btn").forEach(btn => {
+      btn.addEventListener("click", () => activateTab(btn));
+  });
+
+  
+  const firstActiveTab = document.querySelector(".tabs__nav-btn.active") || document.querySelector(".tabs__nav-btn");
+  if (firstActiveTab) activateTab(firstActiveTab);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -349,8 +383,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  Fancybox.bind("[data-fancybox]", {});
-   
-  
+  Fancybox.bind("[data-fancybox]", {
+    Thumbs: false, // отключаем панель превью
+    
+  });
 })
 
