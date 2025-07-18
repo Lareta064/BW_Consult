@@ -30,7 +30,8 @@ mixin case(img='case')
 					span судебные споры
 				
 				.case-card__doc
-					img.img-contain(src='./img/'+img+'.webp', srcset='./img/'+img+'@2x.webp 2x' width='314' height='432' loading='lazy' alt='img')
+					a(href='./img/'+img+'.webp' data-fancybox="case1")
+						img.img-contain(src='./img/'+img+'.webp', srcset='./img/'+img+'@2x.webp 2x' width='314' height='432' loading='lazy' alt='img')
 		
 		//BOTTOM ROW
 		.case-card__bottom.border-accent.txt-center
