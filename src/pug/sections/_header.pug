@@ -2,9 +2,13 @@ header.header-inner
 	.container
 		.header-inner__content.flex-center-y
 			a.logo(href="index.html")
-				img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='30'  alt='logo')
+				img.img-contain(src='./img/logo.webp', srcset='./img/logo@2x.webp 2x'  height='30'  alt='logo')
 			//menu-wrapper
 			.header-inner-menu.flex#header-menu
+				//logo in mob menu
+				a.logo-mobile(href="index.html")
+					img.img-contain(src='./img/logo-mobile.webp', srcset='./img/logo-mobile@2x.webp 2x'  height='24'  alt='logo')
+				
 				//menu
 				ul.header-menu__list
 					li.header-menu__item.active
@@ -21,9 +25,18 @@ header.header-inner
 					a(href="#!").social-group__link
 						svg.svg-tg
 							use(href='./img/sprite.svg#svg-tg')
-				//button
-				button(type="button").btn-accent ЗАПИСАТЬСЯ
+				
+				//button for desk
+				button(type="button").btn-accent.hide-mobile ЗАПИСАТЬСЯ
+				
+				//button for mobile
+				button(type="button").btn-dark.visible-mobile ЗАЯВКА
 
+				//work mode
+				.menu-contacts.border-accent
+					p.txt-accent Ежедневно с 10:00 до 22:00
+					a.phone-link(href="tel:84950044344") 8 495 004 43 44
+					a.phone-link(href="tel:+79262421774") +7 926 242 17 74
 			
 			//menu-toggle
 			button.menu-toggle#menu-toggle

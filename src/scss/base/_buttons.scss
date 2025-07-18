@@ -23,12 +23,24 @@
   &:hover{color: var(--text)}
 }
 .btn-outline{
-	background-color: #fff;
+	background-color: transparent;
 	border:2px solid var(--text);
 	color: var(--text);
 	&:hover{
 		border-color: var(--accent);
 		color: var(--accent);
+	}
+}
+[class^="btn-"].hide-mobile{
+	display: flex;
+	@media (max-width: 767px) {
+	display: none;
+	}
+}
+[class^="btn-"].visible-mobile{
+	display: none;
+	@media (max-width: 767px) {
+		display: flex;
 	}
 }
 .btn-dark{
@@ -39,4 +51,7 @@
 		
 		color: #fff;
 	}
+}
+.header-inner-menu .btn-dark{
+	border-color:currentColor;
 }
