@@ -87,23 +87,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const isScrollingUp = currentScrollTop < lastScrollTop;
 
-        if (isScrollingUp && !header.classList.contains("fix-header")) {
-          header.classList.add("fix-header");
-          
-        }
-
-        if (!isScrollingUp && header.classList.contains("fix-header")) {
+        // Удаляем .fix-header при самом верху страницы
+        if (currentScrollTop < 10) {
           header.classList.remove("fix-header");
-         
+        } else {
+          if (isScrollingUp && !header.classList.contains("fix-header")) {
+            header.classList.add("fix-header");
+          }
+
+          if (!isScrollingUp && header.classList.contains("fix-header")) {
+            header.classList.remove("fix-header");
+          }
         }
 
         lastScrollTop = currentScrollTop;
-      });
-
-      // 🔒 Блокируем удаление .fix-header при resize
-      window.addEventListener("resize", () => {
-        // Ничего не делаем с .fix-header!
-        // Просто можно обновить layout или вызвать перерисовку, если нужно
       });
     }
    
@@ -193,4 +190,3 @@ document.addEventListener('DOMContentLoaded', function() {
     
   });
 })
-
