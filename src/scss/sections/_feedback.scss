@@ -69,6 +69,15 @@
 		color: rgba(41, 40, 45, 0.5);
 	}
 }
+.agree{
+	input[type="checkbox"]{
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	
+}
 .form-textarea{
 	padding: 10px;
 	height: 165px;

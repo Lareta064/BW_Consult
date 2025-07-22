@@ -12,8 +12,10 @@ section.calculation
 					input.form-input(type="text" name="phone" placeholder="Номер телефона")
 				.form-btn
 					button.btn-dark(type="submit" name="name") ОТПРАВИТЬ ЗАЯВКУ
-			p.agree.font_12 Отправляя данные, вы даете согласие на обработку персональных данных и #[a(href="#!") политику конфиденциальности]
-		
+			//- p.agree.font_12 Отправляя данные, вы даете согласие на обработку персональных данных и #[a(href="#!") политику конфиденциальности]
+			label.agree.font_12
+				input(type="checkbox" name="agree_politic")
+				span Отправляя данные, вы даете согласие на обработку персональных данных и #[a(href="#!") политику конфиденциальности]
 		//social
 		.social-links
 			a(href="#!").social-label

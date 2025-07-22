@@ -90,55 +90,6 @@
 	width: 100%;
 	max-width: remy(324);
 }
-.agree-block{
-	max-width: remy(400);
-	font-size: 1rem;
-	width: 100%;
-	line-height: 1.25;
-	letter-spacing: -0.03em;
-	color: var(--color-chernyy);
-	@media (max-width: 767px) {
-		font-size: remy(12);
-		line-height: 1;
-		letter-spacing: 0.03em;
-		text-align: center;
-		color: var(--color-chernyy);
-	}
-}
-.agree-block{
-	&-label{
-		
-		input[type="checkbox"]{
-			width: remy(16);
-			height: remy(16);
-			border-radius: remy(4);
-			background-color: #fff;
-			border:1px solid grey;
-			margin-left: remy(12);
-		}
-	}
-}
-.checkbox-label{
-	position: relative;
-	display: flex;
-	align-items: center;
-	column-gap:remy(2);
-	font-weight: 500;
-	font-size: remy(14);
-	line-height: 1.43;
-	text-align: center;
-	color: #020618;
-	margin-bottom: remy(12);
-	
-}
-.checkbox-input{
-	width: remy(16);
-	height: remy(16);
-	border-radius: remy(4);
-	flex-shrink: 0;
-	border: 1px solid var(--color-smuglyy-yarkiy);
-	background-color: #fff;
-}
 
 // DROPDOWN
 .dropdown {

@@ -27,10 +27,10 @@ header.header-inner#header
 							use(href='./img/sprite.svg#svg-tg')
 				
 				//button for desk
-				button(type="button").btn-accent.hide-mobile ЗАПИСАТЬСЯ
+				a(href="#popup-form" data-fancybox="popupForm-desk").btn-accent.hide-mobile ЗАПИСАТЬСЯ
 				
 				//button for mobile
-				button(type="button").btn-dark.visible-mobile ЗАЯВКА
+				a(href="#popup-form" data-fancybox="popupForm-mobile").btn-dark.visible-mobile ЗАЯВКА
 
 				//work mode
 				.menu-contacts.border-accent
@@ -41,5 +41,19 @@ header.header-inner#header
 			//menu-toggle
 			button.menu-toggle#menu-toggle
 				span
-	
 
+//POPUP FORM
+.popup-form-wrapper#popup-form
+	.h-32.txt-center Форма обращения
+	form.popup-form
+		.form-item
+			input.form-input(type="text" name="name" placeholder="Ваше имя")
+		
+		.form-item
+			input.form-input(type="text" name="phone" placeholder="Номер телефона")
+		
+		.form-button
+			button.btn-dark.w-100(type='submit') ОТПРАВИТЬ ЗАЯВКУ
+			label.agree.font_12
+				input(type="checkbox" name="agree_politic")
+				span Даю свое  #[a(href="#!") согласие]  на обработку персональных данных

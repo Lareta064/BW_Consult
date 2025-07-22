@@ -1,0 +1,14 @@
+.popup-form-wrapper{
+	display: none;
+	border-radius: 6px;
+	background-color: #DBBE83;
+	padding: 40px;
+	width: 95%;
+	max-width: 600px;
+	.txt-center{
+		margin-bottom: 1em;
+	}
+	@media (max-width: 1023px) {
+	  padding: 20px 16px;
+	}
+}
