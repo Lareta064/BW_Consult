@@ -167,6 +167,12 @@ input::placeholder, textarea::placeholder, textarea::placeholder{
 	display: flex;
 	align-items: center;
 	column-gap: 18px;
+	img{transition: .3s; }
+	img:hover{opacity: .7;}
+	&.hide-mobile{display: flex;}
+	@media (max-width: 767px) {
+	 &.hide-mobile{display: none;}
+	}
 }
 .breadcrumbs{
 	&-item{

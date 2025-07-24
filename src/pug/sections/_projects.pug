@@ -1,0 +1,28 @@
+mixin client(img, w, h)
+	//single client
+	.logo-card
+		img(src='./img/logos/'+img+'.webp', srcset='./img/logos/'+img+'@2x.webp 2x' width=''+ w height=''+ h loading='lazy' alt='img')
+//CLIENTS
+section.projects-participation.py-130
+	.container
+		h2.h2 Участие в проектах
+		//SLIDER
+		.grid-six-columns
+			.logo-card
+				img(src='./img/logos/13.webp', srcset='./img/logos/13@2x.webp 2x' width='119' height='30' loading='lazy' alt='img')
+			+client('2-1', 84, 83)
+			+client('3-2', 83, 73)
+			+client('4-1', 94, 93)
+			+client('18', 71, 79)
+			+client('6-1', 119, 30)
+			+client('7-1', 128, 36)
+			+client(19, 116, 37)
+			+client('9-1', 101, 54)
+			+client('10-1', 106, 51)
+			+client(20, 115, 57)
+			+client('12-1', 99, 85)
+			+client('8-1', '60', '79')
+			+client('14', '73', '86')
+			+client('15', '105', '43')
+			+client('16', '84', '81')
+			+client('17', '73', '79')

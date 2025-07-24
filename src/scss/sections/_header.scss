@@ -83,7 +83,11 @@
 	  transform: translateX(110%);
 	  transition: .3s;
 	  &.active{transform: translateX(0%);}
-	  .social-group{display: none;}
+	  .social-group{
+		min-width: 140px;
+		margin-left: auto;
+		
+	  }
 	  .btn-dark{
 		margin-left: auto;
 		padding-left: 27px;

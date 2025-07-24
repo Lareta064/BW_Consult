@@ -1,0 +1,23 @@
+mixin client(img, w, h)
+	//single client
+	.logo-card
+		img(src='./img/logos/'+img+'.webp', srcset='./img/logos/'+img+'@2x.webp 2x' width=''+ w height=''+ h loading='lazy' alt='img')
+//CLIENTS
+section.clients
+	.container
+		h2.h2 Нам доверяют
+		//SLIDER
+		.grid-six-columns
+			.logo-card
+				img(src='./img/logos/1.webp', srcset='./img/logos/1@2x.webp 2x' width='80' height='80' loading='lazy' alt='img')
+			+client(2, 74, 84)
+			+client(3, 71, 79)
+			+client(4, 87, 87)
+			+client(5, 81, 63)
+			+client(6, 78, 81)
+			+client(7, 59, 82)
+			+client(8, 80, 80)
+			+client(9, 76, 76)
+			+client(10, 68, 96)
+			+client(11, 103, 74)
+			+client(12, 101, 66)
